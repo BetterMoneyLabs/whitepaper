@@ -1,0 +1,218 @@
+\documentclass{llncs}   % list options between brackets
+
+\usepackage{color}
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{listings}
+
+\usepackage{hyperref}
+
+\usepackage{systeme}
+
+\def\shownotes{1}
+\def\notesinmargins{0}
+
+\ifnum\shownotes=1
+\ifnum\notesinmargins=1
+\newcommand{\authnote}[2]{\marginpar{\parbox{\marginparwidth}{\tiny %
+  \textsf{#1 {\textcolor{blue}{notes: #2}}}}}%
+  \textcolor{blue}{\textbf{\dag}}}
+\else
+\newcommand{\authnote}[2]{
+  \textsf{#1 \textcolor{blue}{: #2}}}
+\fi
+\else
+\newcommand{\authnote}[2]{}
+\fi
+
+\newcommand{\knote}[1]{{\authnote{\textcolor{green}{kushti notes}}{#1}}}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+
+% type user-defined commands here
+\usepackage[T1]{fontenc}
+
+\usepackage{flushend}
+
+
+\usepackage{titling}
+
+
+\newcommand{\cc}{ChainCash}
+
+\newcommand{\ma}{\mathcal{A}}
+\newcommand{\mb}{\mathcal{B}}
+\newcommand{\he}{\hat{e}}
+\newcommand{\sr}{\stackrel}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\state}{state}
+
+\newcommand{\ignore}[1]{} 
+\newcommand{\full}[1]{}
+\newcommand{\notfull}[1]{#1}
+\newcommand{\rand}{\stackrel{R}{\leftarrow}}
+\newcommand{\mypar}[1]{\smallskip\noindent\textbf{#1.}}
+
+\renewcommand{\labelitemi}{$\star$}
+
+\begin{document}
+
+\title{Better Money Labs\\ \small Unfolding endless possibilities of programmable money}
+
+\author{}%kushti \\ \href{mailto:kushti@protonmail.ch}{kushti@protonmail.ch}}
+
+\maketitle
+
+\section{Introduction}
+
+We are living through big shifts, geopolitically, geoeconomically, lifestyle-wise. Such shifts should inevitably cause changes in monetary landscape, especially as now the mankind is equipped with blockchain tech which allows for transparency of money issuance and initial distribution.
+Unfortunately, with huge demand, there are no proposed multilayered solutions for modern monetary stack yet. Even more, the cryptocurrency space diverged from its initial course of reworking money to very modest role of producing funny collectibles~(such as memecoins) or transfer solutions
+ for trusted party based digital dollar~(USDT).
+In this environment there is unique opportunity to form a first big entity in the space of monetary and cryptocurrency spaces transformation based on programmable
+uncontrollable (and so, geopolitically neutral) Proof-of-Work assets, and profit heavily from the unique position.
+
+The world urgently needs for better money on many levels:
+\begin{itemize}
+  \item many companies around the world struggling with dealing with unstable currencies (for example, Huawei was the biggest beef seller in China for some time after getting paid with it for contracts in Argentina~\cite{huawei}). They need for tokenized real world assets along with tools for clearing, combining collateral of different kinds and trust, and so on.
+  \item due to the nature of globalized financial capital, many villages and towns around the world are stuck in depression. There is need to revive the small communities with new forms of money, created locally.
+  \item there are tens of countries around the globe suffering from hyperinflation and currency crisis. Transparent money creation tied to economic activities would help them a lot.
+\end{itemize}
+
+Thus we establish Better Money, a multi-dimensional initiative to produce modern, transparent, efficient monetary and financial systems in the age of distrust and uncertainty, along with introducing safe and efficient blockchain and decentralized finance protocols helping with
+achieving the goal.
+
+Better Money will be structured as a commercial company around Ergo cryptocurrency, due to its Bitcoin-on-steroids properties,
+like Blockstream was established around Bitcoin, or Consensys was Established around Ethereum. However, unlike said companies,
+the focus here would be not on particular technologies, such as sidechains or Lightning Network in case of BlockStream, rather,
+the focus would be on real-world use cases.
+
+The paper is structured as follows. Section~\ref{sec-team} describes the team and background. Section~\ref{sec-roadmap} is
+outlining proposed solutions for improving the cryptocurrency space and getting real-world adoption in regards with reworking the money
+we aim to work on. If you like to join or parther with Better Money, Section~\ref{sec-join} provides information on
+how to do that.
+
+\section{Team and Background}
+\label{sec-team}
+
+Our team and networks we have (such as friendly research labs in universities around the globe and consultancy shops) are
+capable to do research and development at fastest pace possible in all the cryptocurrency and decentralized finance related
+topics. The team consists of skilled and experienced Scala and Rust developers, researchers, business developers with
+vast experience in Asian, Africa, CIS markets.
+
+What we achieved in the past:
+\begin{itemize}
+  \item  more than dozen of papers published in peer-reviewed venues (cryptography, blockchain, cryptoeconomics, monetary)
+  \item  early contributions to Chainlink, Cardano, NXT (first PoS cryptocurrency, top3 in 2014), Waves (top20 in 2017) etc
+  \item  modular blockchain framework Scorex, the first one of its kind (before Substrate, Intel's Sawtooth Lake, Hyperledger solutions etc) which was used to
+create some educational / experimental blockchains as well as some production ready top100 cryptocurrencies (Waves, V-systems)
+  \item  an ASIC-resistant Proof-of-Work algorithm~\cite{autolykos}, and first non-outsourceable Proof-of-Work algorithm~\cite{autolykos}, both proven with practice
+  \item  first stateless cryptocurrency clients, for both partial~\cite{reyzin2017improving} and full~\cite{chepurnoy2018edrax} settings
+  \item  first log-space mining~\cite{kiayias2021mining} implementation
+  \item  Ergo, cryptocurrency and programmable money platform (\$800M market cap at 2021 peak)
+  \item  SigmaUSD stablecoin (Djed protocol~\cite{zahnentferner2021djed} implementation), survived 30x price rejection of a base asset
+  \item  Gluon and Dexy stablecoin designs
+  \item  P2P financial tools (bonds, privacy tooling~\cite{chepurnoy2020zerojoin})
+  \item  ChainCash prototype, a framework for money creation with elastic supply via trust and blockchain assets in
+  global digital peer-to-peer environment~\cite{chaincash}
+\end{itemize}
+
+With such background, we are now going forward to solving real world issues with tooling, such as Ergo proof-of-work blockchain and programmable money platform, along with developed solutions in programmable money,
+p2p financial tooling, trustless sidechains, trustless and trust-minimized on-chain derivatives, and so on.
+
+\section{Solutions}
+\label{sec-roadmap}
+
+As blockchain tech looks to be stabilized, we suppose that most of the needed pieces are already here, we just need to
+improve and combine them wisely, based on team's twelve years of experience in the cryptocurrency space:
+
+\begin{itemize}
+  \item high-performance Proof-of-Work protocols~~\cite{prism,inputblocks}
+  \item trustless Ergo sidechains~\cite{sidechains} and dedicated Sigma chains~\cite{sigmachains}
+  \item phygital solutions to insure physical commodities with algorithmic counterparts~\cite{phygital}
+  \item monetary expansion tooling on top of on-chain reserves~\cite{chaincash}
+  \item more stablecoin and oracle pool designs
+  \item offchain cash systems with properties needed by use case demands
+  \item tailored financial instruments created by AI
+  \item alternative monetary systems, such as Local Exchange Trading Systems (LETS) and timebanks~\cite{mcquaid2004review},
+        with blockchain being used for cross-community settlement
+\end{itemize}
+
+However, concrete steps are to be decided along with partners, as the goal is to serve real-world use cases. We are already
+in talks with tens of possible partners. If you are interested in partnership also, see Section~\ref{sec-join} for details.
+
+\section{Monetization}
+\label{sec-monetization}
+
+Better Money’s mission to reshape global monetary systems is about disrupting biggest world's markets, which is bringing
+a lot of possibilities to profit. Below are some core revenue streams planned:
+
+\begin{enumerate}
+\item Protocol \& Infrastructure Fees
+\begin{itemize}
+  \item generate fees from decentralized applications (dApps) and interoperability solutions like trustless bridges and oracle networks.
+  \item monetize minting, redemption, and transaction fees for algorithmic and asset-backed stablecoins (e.g., commodity-pegged tokens).
+  \item charge fees for deploying programmable monetary systems (e.g., ChainCash) that enable trust-minimized expansion on top of on-chain reserves.
+\end{itemize}
+
+\item Modular Blockchain Solutions
+\begin{itemize}
+  \item partner with enterprises, governments, and communities to build permissioned or hybrid blockchains, monetizing through token allocations, licensing fees, and revenue-sharing agreements.
+  \item earn fees for enabling cross-chain liquidity, data sharing, and asset transfers between public chains and private networks.
+\end{itemize}
+
+\item Commodity \& Asset Tokenization
+\begin{itemize}
+  \item tokenize real-world assets (RWAs) in partnership with commodity producers (e.g., agriculture, energy), charging setup fees, transaction royalties, and insurance premiums.
+  \item monetize tools for creating and managing on-chain reserves (e.g., Bitcoin, gold, fiat) that back elastic currencies or stablecoins.
+\end{itemize}
+
+\item Research \& Hardware Partnerships
+\begin{itemize}
+  \item secure grants and joint ventures for R\&D in decentralized monetary systems, cryptoeconomics, and AI-driven financial instruments.
+  \item partner with GPU/ASIC holders (e.g., AI firms, data centers) to repurpose hardware for sustainable Proof-of-Work networks, sharing revenue from block rewards.
+  \item monetize underutilized global hardware resources via decentralized marketplaces for storage, mining, or oracle services.
+\end{itemize}
+
+\item Advisory \& Ecosystem Growth
+\begin{itemize}
+  \item offer consultancy to governments and institutions on deploying transparent, blockchain-backed currencies (e.g., community currencies).
+  \item monetize SDKs, APIs, and training programs for builders creating localized monetary solutions (e.g., village tokens, inflation-resistant currencies).
+  \item acquire equity or tokens in projects leveraging Better Money’s tooling, ensuring alignment with ecosystem growth.
+\end{itemize}
+
+\end{enumerate}
+
+\section{How To Join}
+\label{sec-join}
+
+In the first place, we need for partners to launch different experimental and then large-scale project, especially in
+following areas:
+
+\begin{itemize}
+  \item permissioned in usage blockchains with secure consensus from Ergo blockchain and (permissionless or permissioned) interoperability
+  \item hardware manufacturers and holders (eg corporations having millions of GPUs for AI purposes soon to be outdated) willing to utilize them for
+        Proof-of-Work
+  \item commodity producers and storages willing to use stablecoins to insure risks of non-delivery
+  \item Bitcoin and other assets holders willing to build p2p financial tooling and trust-minimized monetary expansion tooling, to have
+        reserves working for them
+\end{itemize}
+
+After initial projects, we will look into entities interested in building Ergo reserves with transparent and trust-minimized
+monetary expansion on top of.
+
+We surely also interested in investors, but prefer smart money with good connections over just money.
+
+
+\newpage
+\bibliography{sources}
+\bibliographystyle{ieeetr} 
+
+\end{document}

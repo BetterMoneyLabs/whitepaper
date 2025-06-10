@@ -1,0 +1,14 @@
+rm better.aux
+rm better.out
+rm better.log
+rm better.bbl
+rm better.blg
+pdflatex better
+bibtex better
+pdflatex better
+pdflatex better
+rm better.aux
+rm better.out
+rm better.log
+rm better.bbl
+rm better.blg
