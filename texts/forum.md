@@ -66,3 +66,6 @@ To have different protocols serving interests of different, often conflicting ac
 need for global neutral commodity and settlement layer. Gold and Bitcoin are already shown need for global neutral 
 uncontrollable commodities, and Ergo is also adding programmable money and settlement not controlled solely by 
 any actor.
+
+Ergo will be used by many parties in many protocols solving digital and real world issues. There will be many actors 
+in need for ERG collateral. Thus Better Money Labs will also build and help to build ERG treasuries. 
