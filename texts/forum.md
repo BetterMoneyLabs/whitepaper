@@ -3,6 +3,7 @@ P2P currencies, Digital Free Banking, and Better Money Labs Role in Moving Thing
 
 As a response to 2008 crisis, Bitcoin peer-to-peer network was launched in January, 2008, which led to a lot of discussions and writings
 done on rework of money creation, economic interactions, decentralization, and so on. Especially as since 2008 we are living through big shifts, geopolitically, geoeconomically, lifestyle-wise. Such shifts should inevitably cause changes in monetary landscape, now with mankind equipped with blockchain tech which allows for trustless creation of base proof-of-work assets, transparency of reserves and monetary expansion.
+And Bitcoin introduced the world to the concept of globally neutral money—an asset free from the direct control of any single nation-state.
 
 Still, after more than 15 years of explosive growth of cryptocurrencies space, there are a lot of unsolved problems in the monetary space which could be solved by cryptocurrencies, programmable money, tokenized real world assets, but they are still unsolved. We are going through
 them below.
@@ -35,6 +36,10 @@ to minimize trust issues in transport layer for the stablecoins. Better Money La
 sidechain of both Bitcoin and Ergo, with superior programmable money characteristics, as a next-level environment for 
 both algorithmic crypto-backed and trusted issuance and redemption based stablecoins.
 
+However, current stablecoins (backed by T-bills) are a step backward from the vision of globally neutral money, as 
+they tie the crypto ecosystem directly to one nation's monetary policy and geopolitical risks. Crypto-backed algorithmic 
+stablecoins on Braid are the true path toward achieving a resilient, neutral, and global store of value. 
+
 Creating Money for the Real World Issues
 ----------------------------------------
 
@@ -52,3 +57,12 @@ this status quo is just weird and unacceptable. Better Money Labs is focused on 
 blockchain technologies, tokenization and smart contracts. We appreciate deep research as well as solving real world issues. 
 While others are working on "tokenization", we are looking further to build tailored financial tools and XXI century monetary 
 systems on top of tokenized assets.
+
+
+The Role of Ergo
+----------------
+
+To have different protocols serving interests of different, often conflicting actors of different kinds, there is 
+need for global neutral commodity and settlement layer. Gold and Bitcoin are already shown need for global neutral 
+uncontrollable commodities, and Ergo is also adding programmable money and settlement not controlled solely by 
+any actor.
