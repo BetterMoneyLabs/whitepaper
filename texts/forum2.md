@@ -6,7 +6,7 @@ the "best" and still realistic monetary system to replace fiat would emerge thro
 blocks though:
 
 * Ergo as a neutral base layer for store-of-value transactions, trustless derivatives and smart reserves.
-* Bitcoin as a neutral base digital commodity
+* Bitcoin as a neutral base digital commodity (would be relevant for some decades to come)
 * Private tokens and/or reputation-based systems for niche communities and tight-knit networks
 * Tokenized real world assets
 
@@ -28,5 +28,8 @@ due to "bad" tokenomics, but it is impossible to make good tokenomics for uncert
 potentially unbacked where trust or limits for new untrusted peers allow,  should be created along with demand. We have efficient offchain cash constructions based on on-chain reserves for that, such as Basis.
 
 The current plan is to implement Basis-based reward mechanism for Celaut, and then spread it to other p2p networks, making Ergo basis for peer-to-peer economies.
+
+Total market cap of DePIN cryptocurrencies is about $23B (according to Messari's DePIN tracker), and this is just a tip
+of an iceberg when we talk about rewarding activities in digital peer-to-peer networks. 
 
 * ChainCash based payment network
