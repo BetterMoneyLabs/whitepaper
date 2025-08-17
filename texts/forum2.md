@@ -18,7 +18,7 @@ We need for couple of Rust developers for Ergo, then Bitcoin merged-mined sidech
 
 * Git Circles, framework for community currencies for developing communities
 
-Currently, the plan is to choose Haskell or Rust as language for implementation, and then call for contributors.
+Call for contributors has been started for Git Circles.
 
 
 * P2P networks incentivization
