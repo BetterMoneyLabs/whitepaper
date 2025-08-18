@@ -14,11 +14,17 @@ Theories aside, in recent months a plan for nice toolset for peer-to-peer networ
 
 * merged-mined sidechains, such as Braid, double-merged mined sidechain of both Bitcoin and Ergo, tailored for stablecoins and RWAs issuers and users:
 
-We need for couple of Rust developers for Ergo, then Bitcoin merged-mined sidechains framework, for starters.
+We need for a couple of Rust developers for Ergo merged-mined sidechains, then Bitcoin merged-mined sidechains framework, for starters.
 
 * Git Circles, framework for community currencies for developing communities
 
-Call for contributors has been started for Git Circles.
+Call for contributors has been started for Git Circles! Git Circles is a framework for making community currencies for 
+developing communities, based on measurable contributions to git repositories. More info can be found at 
+https://github.com/GitCircles/GitCircles-Roadmap/ .
+
+GitCircles would allow for hundreds of thousands of open-source developers along with 
+
+There is need for 1-2 Rust developers to work on git oracle and other offchain code towards the roadmap.
 
 
 * P2P networks incentivization
@@ -32,4 +38,10 @@ The current plan is to implement Basis-based reward mechanism for Celaut, and th
 Total market cap of DePIN cryptocurrencies is about $23B (according to Messari's DePIN tracker), and this is just a tip
 of an iceberg when we talk about rewarding activities in digital peer-to-peer networks. 
 
+There is need for 1-2 Rust developers to work on offchain part behind Basis, add support for trackers and notes exchange 
+(forking current ChainCash Server would work)
+
 * ChainCash based payment network
+
+ChainCash is unique way to create money with elastic supply via trust and blockchain assets in global digital peer-to-peer 
+environment, kinda revival of free banking, now with 
