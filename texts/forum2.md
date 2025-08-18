@@ -1,4 +1,5 @@
 Call for Action: Building Peer-to-Peer Economies and Free Banking on Ergo
+-------------------------------------------------------------------------
 
 Since Satoshi's and Hal Finney's early posts and through years of discussions stimulated by Bitcoin experiment and thousands
 other attempts to get better money for reworking economies for the better outcomes, some things are now clear. In particular,
@@ -16,13 +17,16 @@ Theories aside, in recent months a plan for nice toolset for peer-to-peer networ
 
 We need for a couple of Rust developers for Ergo merged-mined sidechains, then Bitcoin merged-mined sidechains framework, for starters.
 
+Better Money Labs is proposing first merged-mined sidechain Braid https://github.com/BetterMoneyLabs/braid/blob/master/whitepaper/whitepaper.pdf ,
+intended for trusted stablecoin and RWAs, and looking for possibilities to sponsor merged-mined Ergo sidechains. 
+
 * Git Circles, framework for community currencies for developing communities
 
 Call for contributors has been started for Git Circles! Git Circles is a framework for making community currencies for 
 developing communities, based on measurable contributions to git repositories. More info can be found at 
 https://github.com/GitCircles/GitCircles-Roadmap/ .
 
-GitCircles would allow for hundreds of thousands of open-source developers along with 
+GitCircles would allow for hundreds of thousands of open-source developers along with sponsors and enthusiasts.
 
 There is need for 1-2 Rust developers to work on git oracle and other offchain code towards the roadmap.
 
@@ -44,4 +48,25 @@ There is need for 1-2 Rust developers to work on offchain part behind Basis, add
 * ChainCash based payment network
 
 ChainCash is unique way to create money with elastic supply via trust and blockchain assets in global digital peer-to-peer 
-environment, kinda revival of free banking, now with 
+environment, kinda revival of free banking, now with blockchain transparency and automatic contractual enforcement over 
+global neutral settlement layer (Ergo). ChainCash whitepaper can be found at 
+https://github.com/ChainCashLabs/chaincash/blob/master/docs/conf/conf.pdf .
+
+Currently we have rough API and database prototype for ChainCash Server, along with contracts corresponding to CCIP-0.
+There is need to design and develop UI. There is need for 1 or 2 Rust developers to improve server and develop UI as well.
+
+
+Coordination
+============
+
+So in total there is need for 4 to 8 Rust developers for starters. Developers, tet's coordinate over Ergo development 
+group: https://t.me/ErgoDevelopers (bridged with Discord: https://discord.gg/ergo-platform-668903786361651200, 
+#development channel). 
+
+There is need for business development, community building and so on, there are following groups to coordinate on that:
+* GitCircles: https://t.me/gitcircles
+* ChainCash / Basis (P2P networks incentivization): https://t.me/chaincashtalks
+* Merged-mined sidechains: just Ergo developers chat https://t.me/ErgoDevelopers
+
+Better Money Labs is looking for partners to drive real-world use cases and adoption with the groundbreaking technologies 
+from above. The current focus is on the Braid sidechain. Would be awesome to see other companies building here!
